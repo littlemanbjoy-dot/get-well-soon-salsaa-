@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Salsabila Nadhifa 💗</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:"Trebuchet MS",sans-serif;
+  background:linear-gradient(160deg,#fff3f8,#ffe0ec,#fff7fb);
+  color:#9c5476;text-align:center;overflow-x:hidden;
+}
+section{padding:35px 20px}
+.hero{min-height:100vh;display:flex;flex-direction:column;
+align-items:center;justify-content:center}
+h1{font-size:clamp(34px,9vw,54px);color:#d95791;margin:12px 0}
+h2{color:#d95791}
+p{line-height:1.9;font-size:16px}
+.bear{font-size:90px;animation:bounce 2s infinite}
+@keyframes bounce{50%{transform:translateY(-10px)}}
+.card{
+  max-width:430px;margin:20px auto;padding:25px;
+  border:2px solid #ffd0e2;border-radius:28px;
+  background:#ffffffd9;box-shadow:0 10px 30px #eaa2c333;
+}
+button{
+  border:0;border-radius:30px;padding:14px 20px;margin:7px;
+  background:#e879a7;color:white;font-size:15px;
+  font-weight:bold;cursor:pointer;
+  box-shadow:0 5px 12px #d9579125;
+}
+button:active{transform:scale(.96)}
+.secondary{background:#fff;color:#d95791;border:1px solid #f3bad2}
+.hidden{display:none}
+.heart{
+ position:fixed;bottom:-30px;pointer-events:none;
+ animation:float 5s linear forwards;z-index:5;
+}
+@keyframes float{
+ to{transform:translateY(-110vh) rotate(30deg);opacity:0}
+}
+.footer{font-size:12px;padding:25px;color:#bf7b9b}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="bear">🧸💗</div>
+  <p>♡ A LITTLE WEBSITE MADE WITH LOVE ♡</p>
+  <h1>Hai, Salsabila! 🎀</h1>
+  <p>Ada surat kecil buat perempuan paling manis ini...</p>
+  <button onclick="document.getElementById('surat').scrollIntoView({behavior:'smooth'})">
+    Buka hadiah kamu 💌
+  </button>
+  <p>♡ semoga kamu cepat sembuh yaa ♡</p>
+</section>
+
+<section id="surat">
+  <div class="card">
+    <div style="font-size:48px">🐰🌷</div>
+    <h2>Untuk Salsabila Nadhifa</h2>
+    <p>
+      Sayanggg, katanya kamu lagi sakit yaa? 🥺
+      Sini aku peluk virtual duluuu!
+      (づ｡◕‿‿◕｡)づ
+    </p>
+    <p>
+      Cepet sembuh yaa, cantikkuu. Jangan lupa makan,
+      minum obat sesuai anjuran, minum air yang cukup,
+      dan istirahat yang banyak.
+    </p>
+    <p>
+      Kamu nggak harus selalu kuat setiap waktu.
+      Kalau badan kamu capek, istirahat dulu yaa.
+      Aku pengen kamu sehat, bahagia, dan senyum manis lagi. 💗
+    </p>
+    <p>
+      Kalau aku jadi dokter, resep buat kamu itu:
+      2 sendok senyum, 100 peluk, 1000 cium,
+      dan kasih sayang tanpa batas! 😚💕
+    </p>
+    <button onclick="suratRahasia()">Buka surat rahasia 💌</button>
+    <div id="rahasia" class="hidden">
+      <hr style="border:1px dashed #f3bad2">
+      <h2>Pesan dari aku 🥹💗</h2>
+      <p>
+        Salsabila sayang, kamu itu berharga banget.
+        Jangan lupa sayang sama diri sendiri, yaa.
+        Aku mungkin nggak bisa langsung menghilangkan
+        sakitmu, tapi aku selalu berharap kamu lekas pulih.
+      </p>
+      <p>
+        Nanti kalau udah sehat, aku mau lihat senyum kamu
+        lagi, mau ketawa bareng kamu, dan mau meluk kamu
+        lamaaa bangettt! 🧸💋
+      </p>
+      <h2>I love you, Salsabila! 🌙</h2>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <div style="font-size:55px">🐻‍❄️💕</div>
+    <h2>Butuh peluk nggak, sayang?</h2>
+    <p>Kalau lagi sedih atau nggak nyaman, pencet tombol di bawah yaa.</p>
+    <button onclick="peluk()">Minta peluk virtual 🫂</button>
+    <h2 id="pesanPeluk"></h2>
+  </div>
+
+  <div class="card">
+    <div style="font-size:50px">🎁💗</div>
+    <h2>Kotak kejutan!</h2>
+    <p>Ada hadiah kecil buat kamu yang lagi sakit.</p>
+    <button onclick="kejutan()">Buka kejutan 🎀</button>
+    <h2 id="kejutan"></h2>
+  </div>
+
+  <div class="card">
+    <div style="font-size:45px">🎵🌷</div>
+    <h2>Musik buat kamu</h2>
+    <p>Putar nada manis sambil istirahat, yaa.</p>
+    <button onclick="musik()" id="tombolMusik">♫ Putar musik</button>
+    <p style="font-size:12px">Musik instrumental sederhana ♡</p>
+  </div>
+</section>
+
+<section>
+  <div class="bear">🐻💌</div>
+  <h2>Get well soon, my favorite person!</h2>
+  <p>
+    Jangan buru-buru yaa, fokus sembuh dulu.
+    Kamu pantas dapat banyak cinta dan istirahat. 💗
+  </p>
+  <p><b>Made with all my love, just for you. 🎀</b></p>
+  <button onclick="banyakHati()">Klik terakhir nih 💖</button>
+  <div id="akhir"></div>
+</section>
+
+<div class="footer">♡ Salsabila Nadhifa's little love corner ♡</div>
+
+<script>
+function suratRahasia(){
+  document.getElementById('rahasia').classList.toggle('hidden');
+  hati();
+}
+const pelukan=[
+  "Pelukkkk yang erattt! 🫂💗",
+  "Sini senderan dulu di aku 🥹💕",
+  "Kamu nggak sendirian, sayanggg 🌷",
+  "Mwahhh! Satu cium virtual buat kamu 😚"
+];
+let nomor=0;
+function peluk(){
+  document.getElementById('pesanPeluk').textContent=
+  pelukan[nomor%pelukan.length];
+  nomor++;hati();
+}
+const hadiah=[
+  "🎁 Hadiahmu: 1000000 peluk virtual!",
+  "🐻 Boneka beruang yang siap nemenin kamu!",
+  "💗 Kamu disayang lebih dari yang kamu tahu!",
+  "🌷 Semoga hari esok terasa lebih baik yaa!"
+];
+function kejutan(){
+  document.getElementById('kejutan').textContent=
+  hadiah[Math.floor(Math.random()*hadiah.length)];
+  hati();
+}
+function hati(){
+  for(let i=0;i<12;i++){
+    setTimeout(()=>{
+      const el=document.createElement('span');
+      el.className='heart';
+      el.textContent=['💗','💕','💖','🌸','🎀'][Math.floor(Math.random()*5)];
+      el.style.left=Math.random()*100+'vw';
+      el.style.fontSize=(18+Math.random()*22)+'px';
+      el.style.animationDuration=(3+Math.random()*3)+'s';
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(),6500);
+    },i*100);
+  }
+}
+function banyakHati(){
+  document.getElementById('akhir').innerHTML=
+  '<h2>ILY Salsabila Nadhifa! 💗🥹</h2>'+
+  '<p>Semoga cepat sembuh, kesayangan akuuu! 🧸💕</p>';
+  for(let i=0;i<5;i++)setTimeout(hati,i*300);
+}
+
+// Nada instrumental sederhana, tanpa file musik eksternal.
+let ctx=null, timer=null, sedang=false, langkah=0;
+const nada=[523.25,659.25,783.99,659.25,587.33,659.25,523.25,392];
+function bunyi(){
+  if(!sedang||!ctx)return;
+  const osc=ctx.createOscillator();
+  const gain=ctx.createGain();
+  osc.type='sine';
+  osc.frequency.value=nada[langkah%nada.length];
+  gain.gain.setValueAtTime(0.0001,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.09,ctx.currentTime+0.04);
+  gain.gain.exponentialRampToValueAtTime(0.0001,ctx.currentTime+0.45);
+  osc.connect(gain);gain.connect(ctx.destination);
+  osc.start();osc.stop(ctx.currentTime+0.5);
+  langkah++;
+  timer=setTimeout(bunyi,430);
+}
+async function musik(){
+  if(sedang){
+    sedang=false;clearTimeout(timer);
+    document.getElementById('tombolMusik').textContent='♫ Putar musik';
+    return;
+  }
+  try{
+    ctx=ctx||new (window.AudioContext||window.webkitAudioContext)();
+    await ctx.resume();
+    sedang=true;bunyi();
+    document.getElementById('tombolMusik').textContent='Ⅱ Jeda musik';
+  }catch(e){
+    alert('Browser kamu belum bisa memutar musik ini.');
+  }
+}
+setInterval(()=>{if(Math.random()>.45)hatiKecil()},1800);
+function hatiKecil(){
+  const el=document.createElement('span');
+  el.className='heart';el.textContent='♡';
+  el.style.left=Math.random()*100+'vw';
+  el.style.color='#e879a7';el.style.animationDuration='6s';
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),6000);
+}
+</script>
+</body>
+</html>
